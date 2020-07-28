@@ -56,7 +56,7 @@ namespace SampleApplication
             _log.Info("Stopped.");
         }
 
-        public PhysicalAddress GetMacAddress(IPAddress ip)
+        public PhysicalAddress? GetMacAddress(IPAddress ip)
         {
             lock (_syncRoot)
             {
