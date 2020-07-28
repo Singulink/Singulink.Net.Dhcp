@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>Copyright (c) 2020 Singulink</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>DHCP Server</PackageTags>
+    <PackageProjectUrl>https://github.com/Singulink/Singulink.Net.Dhcp</PackageProjectUrl>
+    <Authors>Mike Marynowski</Authors>
+    <Company>Singulink</Company>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+</Project>
