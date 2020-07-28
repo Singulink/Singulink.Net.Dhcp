@@ -25,6 +25,8 @@ namespace SampleApplication
 {
     public class AppDhcpServer : DhcpServer
     {
+        private static readonly IPAddress SubnetMask = IPAddress.Parse("255.255.0.0");
+        
         // Grab a logger using your logging library of choice:
         private static readonly ILog _log = LogProvider.GetCurrentClassLogger();
 
@@ -33,12 +35,10 @@ namespace SampleApplication
         // mapping values:
         private IPAddressMap _clientMap = new IPAddressMap();
 
-        private static readonly IPAddress SubnetMask = IPAddress.Parse("255.255.0.0");
-
-        private object _syncRoot = new object();
+        private readonly object _syncRoot = new object();
 
         public event Action<PhysicalAddress> DiscoverReceived = delegate { };
-        public event EventHandler Disconnected = delegate { };
+        public event Action Disconnected = delegate { };
 
         public AppDhcpServer(IPAddress listeningAddress) : base(listeningAddress, SubnetMask) { }
 
@@ -159,7 +159,7 @@ namespace SampleApplication
         protected override void OnSocketError(SocketException ex)
         {
             _log.Error("Socket error.", ex);
-            Disconnected.Invoke(this, EventArgs.Empty);
+            Disconnected.Invoke();
         }
     }
 }
