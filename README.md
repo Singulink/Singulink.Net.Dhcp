@@ -80,7 +80,7 @@ namespace SampleApplication
                 {
                     try
                     {
-                        ip = clientMap.GetNextAvailableIPAddress();
+                        ip = _clientMap.GetNextAvailableIPAddress();
                     }
                     catch
                     {
