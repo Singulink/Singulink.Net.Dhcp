@@ -67,7 +67,7 @@ namespace SampleApplication
             return null;
         }
 
-        protected override DhcpDiscoverResult OnDiscoverReceived(DhcpMessage message)
+        protected override DhcpDiscoverResult? OnDiscoverReceived(DhcpMessage message)
         {
             _log.Debug(message);
 
@@ -96,7 +96,7 @@ namespace SampleApplication
             return DhcpDiscoverResult.CreateOffer(message, ip, uint.MaxValue);
         }
 
-        protected override DhcpRequestResult OnRequestReceived(DhcpMessage message)
+        protected override DhcpRequestResult? OnRequestReceived(DhcpMessage message)
         {
             _log.Debug(message);
 
