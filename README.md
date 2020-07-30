@@ -1,6 +1,6 @@
 # Singulink.Net.Dhcp
 
-[![Join the chat](https://badges.gitter.im/Singulink.svg)](https://gitter.im/Singulink?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat](https://badges.gitter.im/Singulink/community.svg)](https://gitter.im/Singulink/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![View nuget packages](https://img.shields.io/nuget/v/Singulink.Net.Dhcp.svg)](https://www.nuget.org/packages/Singulink.Net.Dhcp/)
 [![Build](https://github.com/Singulink/Singulink.Net.Dhcp/workflows/build/badge.svg)](https://github.com/Singulink/Singulink.Net.Dhcp/actions?query=workflow%3A%22build%22)
 
