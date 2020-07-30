@@ -10,6 +10,8 @@ This cross-platform .NET Standard 2.0 library allows you to easily integrate a D
 
 Simply install the `Singulink.Net.Dhcp` NuGet package and implement the `DhcpServer` class as required by your application.
 
+**Supported Runtimes**: Anywhere .NET Standard 2.0 is supported, including .NET Framework 4.6.1+ and .NET Core 2.0+.
+
 ## Example Implementation
 
 The following is a minimal example of how you might implement a custom DHCP server with logging using this library:
