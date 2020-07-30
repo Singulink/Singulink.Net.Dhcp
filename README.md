@@ -20,8 +20,9 @@ The following is a minimal example of how you might implement a custom DHCP serv
 using System;
 using System.Net;
 using System.Net.Sockets;
-using Singulink.Net.Dhcp;
 using System.Net.NetworkInformation;
+
+using Singulink.Net.Dhcp;
 
 namespace SampleApplication
 {
