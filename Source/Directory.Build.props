@@ -1,10 +1,13 @@
 <Project>
- <PropertyGroup>
-   <LangVersion>8.0</LangVersion>
-   <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-   <AnnotatedReferenceAssemblyVersion>3.1.0</AnnotatedReferenceAssemblyVersion>
-   <Nullable>enable</Nullable>
- </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <AnnotatedReferenceAssemblyVersion>3.1.0</AnnotatedReferenceAssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
 
   <ItemGroup>
     <!--Reference Assembly Annotator -->
