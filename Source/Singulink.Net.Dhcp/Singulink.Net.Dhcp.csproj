@@ -9,7 +9,17 @@
     <PackageProjectUrl>https://github.com/Singulink/Singulink.Net.Dhcp</PackageProjectUrl>
     <Authors>Mike Marynowski</Authors>
     <Company>Singulink</Company>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <PackageIcon>Singulink Icon 128x128.png</PackageIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Resources\Singulink Icon 128x128.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
