@@ -12,6 +12,12 @@ Simply install the `Singulink.Net.Dhcp` NuGet package and implement the `DhcpSer
 
 **Supported Runtimes**: Anywhere .NET Standard 2.0 is supported, including .NET Framework 4.6.1+ and .NET Core 2.0+.
 
+## API
+
+You can browse the API on [fuget](https://www.fuget.org/packages/Singulink.Net.Dhcp). 
+
+The design of the library closely matches the [RFC 2131 spec for DHCP](https://tools.ietf.org/html/rfc2131), which is a good resource for understanding all the message fields and options if you need to implement advanced functionality. The example below demonstrates everything you need to write a fully functional basic server which should suffice for most custom embedded DCHP server needs.
+
 ## Example Implementation
 
 The following is a minimal example of how you might implement a custom DHCP server with logging using this library:
@@ -34,7 +40,7 @@ namespace SampleApplication
         private static readonly ILog _log = LogProvider.GetCurrentClassLogger();
 
         // Your implementation of mappings between IP addresses and MAC addresses - could be
-        // an in-memory mapping, database lookup based, or some other custom mechanism of 
+        // an in-memory dictionary, database lookup, or some other custom mechanism of 
         // mapping values:
         private IPAddressMap _clientMap = new IPAddressMap();
 
