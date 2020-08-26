@@ -9,10 +9,11 @@
     <PackageProjectUrl>https://github.com/Singulink/Singulink.Net.Dhcp</PackageProjectUrl>
     <Authors>Mike Marynowski</Authors>
     <Company>Singulink</Company>
-    <Version>1.0.2</Version>
+    <Version>1.0.2.1</Version>
     <PackageIcon>Singulink Icon 128x128.png</PackageIcon>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <Description>Base types to support custom DHCP server implementations in .NET.</Description>
   </PropertyGroup>
 
   <ItemGroup>
