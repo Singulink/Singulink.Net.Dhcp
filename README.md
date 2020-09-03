@@ -4,21 +4,32 @@
 [![View nuget packages](https://img.shields.io/nuget/v/Singulink.Net.Dhcp.svg)](https://www.nuget.org/packages/Singulink.Net.Dhcp/)
 [![Build](https://github.com/Singulink/Singulink.Net.Dhcp/workflows/build/badge.svg)](https://github.com/Singulink/Singulink.Net.Dhcp/actions?query=workflow%3A%22build%22)
 
-This cross-platform .NET Standard 2.0 library allows you to easily integrate a DHCP server into your .NET Core or .NET Framework application. It has been in active use in mission-critical applications since 2010 serving IP addresses to embedded devices on private networks.
+**Singulink.Net.Dhcp** allows you to easily integrate a DHCP server into your .NET Core or .NET Framework application. It has been in active use in mission-critical applications since 2010 serving IP addresses to embedded devices on private networks.
+
+### About Singulink
+
+*Shameless plug*: We are a small team of engineers and designers dedicated to building beautiful, functional and well-engineered software solutions. We offer very competitive rates as well as fixed-price contracts and welcome inquiries to discuss any custom development / project support needs you may have.
+
+This package is part of our **Singulink Libraries** collection. Visit https://github.com/Singulink to see our full list of publicly available libraries and other open-source projects.
 
 ## Installation
 
 Simply install the `Singulink.Net.Dhcp` NuGet package and implement the `DhcpServer` class as required by your application.
 
-**Supported Runtimes**: Anywhere .NET Standard 2.0 is supported, including .NET Framework 4.6.1+ and .NET Core 2.0+.
+**Supported Runtimes**: Anywhere .NET Standard 2.0+ is supported, including:
+- .NET Core 2.0+
+- .NET Framework 4.6.1+
+- Mono 5.4+
+- Xamarin.iOS 10.14+
+- Xamarin.Android 8.0+
 
 ## API
 
 You can browse the API on [FuGet](https://www.fuget.org/packages/Singulink.Net.Dhcp). 
 
-The design of the library closely matches the [RFC 2131 spec for DHCP](https://tools.ietf.org/html/rfc2131), which is a good resource for understanding all the message fields and options if you need to implement advanced functionality. The example below demonstrates everything you need to write a fully functional basic server which should suffice for most custom embedded DCHP server needs.
+The design of this library closely matches the [RFC 2131 spec for DHCP](https://tools.ietf.org/html/rfc2131), which is a good resource for understanding all the message fields and options if you need to implement advanced functionality. The example below demonstrates everything needed to write a fully functional basic server which should suffice for most custom embedded DCHP server needs.
 
-## Example Implementation
+## Usage
 
 The following is a minimal example of how you might implement a custom DHCP server with logging using this library:
 
