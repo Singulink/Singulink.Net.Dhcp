@@ -3,17 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Copyright (c) 2020 Singulink</Copyright>
+    <Copyright>© Singulink. All rights reserved.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>DHCP Server</PackageTags>
     <PackageProjectUrl>https://github.com/Singulink/Singulink.Net.Dhcp</PackageProjectUrl>
-    <Authors>Mike Marynowski</Authors>
-    <Company>Singulink</Company>
+    <Authors>Singulink</Authors>
     <Version>1.0.2.1</Version>
     <PackageIcon>Singulink Icon 128x128.png</PackageIcon>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
-    <Description>Base types to support custom DHCP server implementations in .NET.</Description>
+    <Description>Provides base types to support custom DHCP server implementations.</Description>
   </PropertyGroup>
 
   <ItemGroup>
