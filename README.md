@@ -27,7 +27,7 @@ Simply install the `Singulink.Net.Dhcp` NuGet package and implement the `DhcpSer
 
 You can browse the API on [FuGet](https://www.fuget.org/packages/Singulink.Net.Dhcp). 
 
-The design of this library closely matches the [RFC 2131 spec for DHCP](https://tools.ietf.org/html/rfc2131), which is a good resource for understanding all the message fields and options if you need to implement advanced functionality. The example below demonstrates everything needed to write a fully functional basic server which should suffice for most custom embedded DCHP server needs.
+The design of this library closely matches the [RFC 2131 spec for DHCP](https://tools.ietf.org/html/rfc2131), which is a good resource for understanding all the message fields and options if you need to implement advanced functionality. The example below demonstrates everything needed to write a fully functional basic server which should suffice for most custom embedded DHCP server needs.
 
 ## Usage
 
