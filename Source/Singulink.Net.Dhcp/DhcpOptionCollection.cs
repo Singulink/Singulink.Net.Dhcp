@@ -156,6 +156,8 @@ namespace Singulink.Net.Dhcp
                 stream.WriteByte((byte)pair.Value.Length);
                 stream.Write(pair.Value, 0, pair.Value.Length);
             }
+
+            stream.WriteByte((byte)DhcpOption.End);
         }
     }
 }
