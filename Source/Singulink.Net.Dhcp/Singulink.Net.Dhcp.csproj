@@ -8,7 +8,7 @@
     <PackageTags>DHCP Server</PackageTags>
     <PackageProjectUrl>https://github.com/Singulink/Singulink.Net.Dhcp</PackageProjectUrl>
     <Authors>Singulink</Authors>
-    <Version>1.0.2.1</Version>
+    <Version>1.0.3</Version>
     <PackageIcon>Singulink Icon 128x128.png</PackageIcon>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
