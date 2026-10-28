@@ -17,11 +17,7 @@
     </PackageReference>
     <PackageDownload Include="Microsoft.NETCore.App.Ref" Version="[$(AnnotatedReferenceAssemblyVersion)]" />
 
-    <!-- Fody -->
-    <PackageReference Include="Fody" Version="6.2.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="RuntimeNullables.Fody" Version="0.9.2" PrivateAssets="all" />
+    <!-- Null checks -->
+    <PackageReference Include="Singulink.RuntimeNullables" Version="3.0.0" PrivateAssets="all" />
   </ItemGroup>
 </Project>
